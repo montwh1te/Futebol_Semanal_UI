@@ -81,11 +81,18 @@ const PartidasInfo = () => {
 
         <main className="px-40 flex flex-1 justify-center py-5">
           <div className="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div className="flex flex-wrap justify-between gap-3 p-4">
-              <p className="text-white tracking-light text-[32px] font-bold leading-tight min-w-72">
-                Partidas
-              </p>
-            </div>
+            <div className="flex flex-wrap justify-between items-center gap-3 p-4">
+          <p className="text-white tracking-light text-[32px] font-bold leading-tight min-w-72">
+            Partidas
+          </p>
+          <button
+            onClick={handleCriarPartida}
+            className="rounded-full h-10 px-4 bg-[#10cf6f] text-[#111814] text-sm font-bold hover:bg-[#0da85d]"
+          >
+            Criar nova partida
+          </button>
+        </div>
+
 
             {partidas.length === 0 ? (
               <div className="flex flex-col items-center justify-center gap-4 p-10 text-white">

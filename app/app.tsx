@@ -15,11 +15,11 @@ import JogadorInfo from "./routes/Jogadores/JogadorInfo";
 
 import CriarPartida from "./routes/Partidas/CriarPartida";
 import PartidasInfo from "./routes/Partidas/PartidasInfo";
-// import PartidaInfo from "./routes/Partidas/PartidaInfo";
+import PartidaInfo from "./routes/Partidas/PartidaInfo";
 
-// import CriarEstatistica from "./routes/Estatisticas/CriarEstatistica";
-// import EstatisticasInfo from "./routes/Estatisticas/EstatisticasInfo";
-// import EstatisticaInfo from "./routes/Estatisticas/EstatisticaInfo";
+import CriarEstatistica from "./routes/Estatisticas/CriarEstatistica";
+import EstatisticasInfo from "./routes/Estatisticas/EstatisticasInfo";
+import EstatisticaInfo from "./routes/Estatisticas/EstatisticaInfo";
 
 function App() {
   return (
@@ -40,13 +40,12 @@ function App() {
 
       <Route path=":usuarioId/times/:timeId/criar-partida" element={<CriarPartida />} />
       <Route path=":usuarioId/times/:timeId/partidas" element={<PartidasInfo />} />
-      
-      {/* <Route path=":usuarioId/times/:timeId/partidas/:partidaId" element={<PartidaInfo />} /> */}
+      <Route path=":usuarioId/times/:timeId/partidas/:partidaId" element={<PartidaInfo />} />
 
-      {/* <Route path=":usuarioId/times/:partidaId/criar-estatistica" element={<CriarEstatistica />} />
+      <Route path=":usuarioId/times/:timeId/partidas/:partidaId/criar-estatistica" element={<CriarEstatistica />} />
       <Route path=":usuarioId/times/:timeId/partidas/:partidaId/estatisticas" element={<EstatisticasInfo />} />
-      <Route path=":usuarioId/times/:timeId/partidas/:partidaId/estatisticas/:estatisticaId" element={<EstatisticaInfo />} /> */}
-
+      <Route path=":usuarioId/times/:timeId/partidas/:partidaId/estatisticas/:estatisticaId" element={<EstatisticaInfo />} />
+      
     </Routes>
   );
 }

@@ -155,20 +155,6 @@ const TimeInfo = () => {
               <button onClick={verTodosJogadores} className="flex min-w-[84px] cursor-pointer items-center justify-center rounded-full h-10 px-4 bg-[#283930] text-white text-sm font-bold">Ver Todos os Jogadores</button>
             </div>
 
-            <h2 className="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Partidas Recentes</h2>
-            {ultimasPartidas.length === 0 ? (
-              <p className="text-white px-4">Nenhuma partida registrada.</p>
-            ) : (
-              ultimasPartidas.map((p) => (
-                <div key={p.id} className="flex items-center gap-4 bg-[#111814] px-4 min-h-[72px] py-2 rounded-lg">
-                  <div className="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14 w-14 h-14 flex-shrink-0" style={{ backgroundImage: `url(${p.fotoUrl || "https://via.placeholder.com/150"})` }}></div>
-                  <div className="flex flex-col justify-center overflow-hidden">
-                    <p className="text-white text-base font-medium line-clamp-1">{p.descricao}</p>
-                    <p className="text-[#9db9ab] text-sm font-normal line-clamp-2">{p.local}</p>
-                  </div>
-                </div>
-              ))
-            )}
             <div className="flex px-4 py-3 justify-start">
               <button onClick={verTodasPartidas} className="flex min-w-[84px] cursor-pointer items-center justify-center rounded-full h-10 px-4 bg-[#283930] text-white text-sm font-bold">Ver Todas as Partidas</button>
             </div>

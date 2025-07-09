@@ -37,10 +37,16 @@ const TodosTimes = () => {
         <div className="px-40 flex flex-1 justify-center py-5">
           <div className="layout-content-container flex flex-col max-w-[960px] flex-1">
             <div className="flex flex-wrap justify-between gap-3 p-4">
-              <p className="text-white tracking-light text-[32px] font-bold leading-tight min-w-72">
-                Times
-              </p>
-            </div>
+            <p className="text-white tracking-light text-[32px] font-bold leading-tight min-w-72">
+              Times
+            </p>
+            <button
+              onClick={() => navigate(`/${usuarioId}/times/criar-time`)}
+              className="h-10 px-4 bg-[#10cf6f] text-[#111814] rounded-full text-sm font-semibold hover:bg-[#0db561] transition"
+            >
+              Criar Time
+            </button>
+          </div>
 
             <div className="px-4 py-3 @container">
               <div className="flex overflow-hidden rounded-xl border border-[#3b5447] bg-[#111814]">

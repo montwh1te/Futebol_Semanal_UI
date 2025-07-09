@@ -107,8 +107,14 @@ const EstatisticasPartida = () => {
         <Header />
         <div className="px-40 flex flex-1 justify-center py-5">
           <div className="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div className="flex flex-wrap justify-between gap-3 p-4">
-              <div className="flex min-w-72 flex-col gap-3">
+            <div className="flex flex-wrap justify-between gap-3 p-4 items-center">
+              <div className="flex flex-col gap-3 min-w-72">
+                <button
+                  onClick={() => navigate(-1)}
+                  className="w-fit text-sm font-semibold text-[#a3b2ab] hover:text-white transition"
+                >
+                  ← Voltar
+                </button>
                 <p className="text-white text-[32px] font-bold leading-tight">Estatísticas da Partida</p>
                 <p className="text-[#a3b2ab] text-sm">Desempenho dos jogadores nesta partida.</p>
               </div>
